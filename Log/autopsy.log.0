@@ -1,0 +1,194 @@
+2025-06-24 21:22:20.748 org.sleuthkit.autopsy.centralrepository.datamodel.RdbmsCentralRepo upgradeSchema
+INFO: Central Repository is up to date
+2025-06-24 21:22:20.753 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Starting local Solr SOLR8 server
+2025-06-24 21:22:20.754 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Port [23,232] available, starting Solr
+2025-06-24 21:22:20.754 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Starting Solr 8 server
+2025-06-24 21:22:20.754 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Setting Solr 8 directory: /usr/share/autopsy/autopsy/solr
+2025-06-24 21:22:20.754 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Running Solr 8 command: [/usr/share/autopsy/autopsy/solr/bin/autopsy-solr, start, -p, 23232] from /usr/share/autopsy/autopsy/solr
+2025-06-24 21:22:20.756 org.sleuthkit.autopsy.casemodule.Case openAppServiceCaseResources
+SEVERE: Solr Keyword Search Service failed to open case resources for narck
+java.util.concurrent.ExecutionException: org.sleuthkit.autopsy.appservices.AutopsyService$AutopsyServiceException: Failed to open or create core for /home/huntern/Autopsy Cases/narck
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.open(Case.java:2289)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+org.sleuthkit.autopsy.appservices.AutopsyService$AutopsyServiceException: Failed to open or create core for /home/huntern/Autopsy Cases/narck
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.open(Case.java:2289)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+org.sleuthkit.autopsy.keywordsearch.KeywordSearchModuleException: Unable to connect to Solr server Could not start Solr server process
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.open(Case.java:2289)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+org.sleuthkit.autopsy.keywordsearch.KeywordSearchModuleException: Could not start Solr server process
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.open(Case.java:2289)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+java.io.IOException: Cannot run program "/usr/share/autopsy/autopsy/solr/bin/autopsy-solr" (in directory "/usr/share/autopsy/autopsy/solr"): error=13, Permission denied
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.open(Case.java:2289)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+java.io.IOException: error=13, Permission denied
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.open(Case.java:2289)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 21:22:20.76 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.49.1.0 loaded in native mode
+2025-06-24 21:22:21.127 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened narck (narck_20250624_204955) in /home/huntern/Autopsy Cases/narck as the current case
+2025-06-24 21:22:21.127 org.sleuthkit.autopsy.progress.LoggingProgressIndicator progress
+INFO: Retrieving images for case: autopsy.db...
+2025-06-24 21:22:21.128 org.sleuthkit.autopsy.progress.LoggingProgressIndicator progress
+INFO: Opening all filesystems for image: Narcos-1.001...
+2025-06-24 21:25:58.565 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Stopping Solr 8 server
+2025-06-24 21:25:58.565 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Setting Solr 8 directory: /usr/share/autopsy/autopsy/solr
+2025-06-24 21:25:58.565 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Running Solr 8 command: [/usr/share/autopsy/autopsy/solr/bin/autopsy-solr, stop, -k, jjk#09s, -p, 23232] from /usr/share/autopsy/autopsy/solr
+2025-06-24 21:25:58.567 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+WARNING: Error while attempting to stop Solr server
+java.io.IOException: Cannot run program "/usr/share/autopsy/autopsy/solr/bin/autopsy-solr" (in directory "/usr/share/autopsy/autopsy/solr"): error=13, Permission denied
+	java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	org.sleuthkit.autopsy.keywordsearch.Server.runLocalSolr8ControlCommand(Server.java:533)
+	org.sleuthkit.autopsy.keywordsearch.Server.stopLocalSolr(Server.java:873)
+	org.sleuthkit.autopsy.keywordsearch.Server.stop(Server.java:861)
+	org.sleuthkit.autopsy.keywordsearch.Installer.closing(Installer.java:82)
+	org.netbeans.core.startup.NbInstaller.closing(NbInstaller.java:682)
+	org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:2307)
+	org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:346)
+	org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:117)
+	org.netbeans.core.NbLifeExit.run(NbLifeExit.java:72)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.doEvent(NbMutexEventProvider.java:97)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.readAccess(NbMutexEventProvider.java:72)
+	org.netbeans.modules.openide.util.LazyMutexImplementation.readAccess(LazyMutexImplementation.java:66)
+	org.openide.util.Mutex.readAccess(Mutex.java:241)
+	org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:209)
+	org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:115)
+	org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:529)
+	java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:357)
+	java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:357)
+	java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:357)
+	java.desktop/java.awt.Window.processWindowEvent(Window.java:2085)
+	java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	java.desktop/java.awt.Window.processEvent(Window.java:2044)
+	java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5001)
+	java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:136)
+	java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+java.io.IOException: error=13, Permission denied
+	java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	org.sleuthkit.autopsy.keywordsearch.Server.runLocalSolr8ControlCommand(Server.java:533)
+	org.sleuthkit.autopsy.keywordsearch.Server.stopLocalSolr(Server.java:873)
+	org.sleuthkit.autopsy.keywordsearch.Server.stop(Server.java:861)
+	org.sleuthkit.autopsy.keywordsearch.Installer.closing(Installer.java:82)
+	org.netbeans.core.startup.NbInstaller.closing(NbInstaller.java:682)
+	org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:2307)
+	org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:346)
+	org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:117)
+	org.netbeans.core.NbLifeExit.run(NbLifeExit.java:72)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.doEvent(NbMutexEventProvider.java:97)
+	org.netbeans.modules.openide.util.NbMutexEventProvider$Event.readAccess(NbMutexEventProvider.java:72)
+	org.netbeans.modules.openide.util.LazyMutexImplementation.readAccess(LazyMutexImplementation.java:66)
+	org.openide.util.Mutex.readAccess(Mutex.java:241)
+	org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:209)
+	org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:115)
+	org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:529)
+	java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:357)
+	java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:357)
+	java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:357)
+	java.desktop/java.awt.Window.processWindowEvent(Window.java:2085)
+	java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	java.desktop/java.awt.Window.processEvent(Window.java:2044)
+	java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5001)
+	java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+	java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+	java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+	org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:136)
+	java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2025-06-24 21:25:58.589 org.sleuthkit.autopsy.core.Installer <init>
+INFO: core installer created
+2025-06-24 21:25:58.593 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case Narcos (narck_20250624_204955) in /home/huntern/Autopsy Cases/narck
+2025-06-24 21:26:00.595 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Shutting down image gallery controller for case Narcos (narck_20250624_204955)
+2025-06-24 21:26:00.595 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB close
+INFO: Closing the drawable.db
+2025-06-24 21:26:00.595 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Completed shut down of image gallery controller for case Narcos (narck_20250624_204955)

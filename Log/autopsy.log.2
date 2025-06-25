@@ -1,0 +1,322 @@
+2025-06-24 20:49:56.173 org.sleuthkit.autopsy.centralrepository.datamodel.RdbmsCentralRepo upgradeSchema
+INFO: Central Repository is up to date
+2025-06-24 20:49:56.212 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Starting local Solr SOLR8 server
+2025-06-24 20:49:56.213 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Port [23,232] available, starting Solr
+2025-06-24 20:49:56.213 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Starting Solr 8 server
+2025-06-24 20:49:56.213 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Setting Solr 8 directory: /usr/share/autopsy/autopsy/solr
+2025-06-24 20:49:56.213 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Running Solr 8 command: [/usr/share/autopsy/autopsy/solr/bin/autopsy-solr, start, -p, 23232] from /usr/share/autopsy/autopsy/solr
+2025-06-24 20:49:56.215 org.sleuthkit.autopsy.casemodule.Case openAppServiceCaseResources
+SEVERE: Solr Keyword Search Service failed to open case resources for narck
+java.util.concurrent.ExecutionException: org.sleuthkit.autopsy.appservices.AutopsyService$AutopsyServiceException: Failed to open or create core for /home/huntern/Autopsy Cases/narck
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.create(Case.java:2240)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+org.sleuthkit.autopsy.appservices.AutopsyService$AutopsyServiceException: Failed to open or create core for /home/huntern/Autopsy Cases/narck
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.create(Case.java:2240)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+org.sleuthkit.autopsy.keywordsearch.KeywordSearchModuleException: Unable to connect to Solr server Could not start Solr server process
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.create(Case.java:2240)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+org.sleuthkit.autopsy.keywordsearch.KeywordSearchModuleException: Could not start Solr server process
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.create(Case.java:2240)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+java.io.IOException: Cannot run program "/usr/share/autopsy/autopsy/solr/bin/autopsy-solr" (in directory "/usr/share/autopsy/autopsy/solr"): error=13, Permission denied
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.create(Case.java:2240)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+java.io.IOException: error=13, Permission denied
+	java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	org.sleuthkit.autopsy.casemodule.Case.openAppServiceCaseResources(Case.java:2966)
+	org.sleuthkit.autopsy.casemodule.Case.create(Case.java:2240)
+	org.sleuthkit.autopsy.casemodule.Case.lambda$doOpenCaseAction$6(Case.java:2157)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:49:56.227 org.sleuthkit.autopsy.imagegallery.PerCaseProperties getConfigSetting
+INFO: File did not exist. Created file [Image Gallery.properties]
+2025-06-24 20:49:56.229 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.49.1.0 loaded in native mode
+2025-06-24 20:49:56.243 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened narck (narck_20250624_204955) in /home/huntern/Autopsy Cases/narck as the current case
+2025-06-24 20:49:56.298 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Cyber Triage Malware Scanner, version = 1.0.0
+2025-06-24 20:49:56.298 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Central Repository, version = 4.22.1
+2025-06-24 20:49:56.298 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Data Source Integrity, version = 4.22.1
+2025-06-24 20:49:56.298 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = DJI Drone Analyzer, version = 4.22.1
+2025-06-24 20:49:56.298 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Embedded File Extractor, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Encryption Detection, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Extension Mismatch Detector, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = File Type Identification, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Hash Lookup, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Interesting Files Identifier, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Android Analyzer (aLEAPP), version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = iOS Analyzer (iLEAPP), version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = PhotoRec Carver, version = 7.0
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Picture Analyzer, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Plaso, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Virtual Machine Extractor, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = YARA Analyzer, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Keyword Search, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Email Parser, version = 4.22.1
+2025-06-24 20:49:56.299 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader addFactory
+INFO: Found ingest module factory: name = Recent Activity, version = 4.22.1
+2025-06-24 20:49:56.322 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = GPX Parser, version = 1.2
+2025-06-24 20:49:56.323 org.sleuthkit.autopsy.ingest.IngestModuleFactoryLoader getIngestModuleFactories
+INFO: Found ingest module factory: name = Android Analyzer, version = 4.22.1
+2025-06-24 20:49:56.339 org.sleuthkit.autopsy.keywordsearch.KeywordSearchGlobalSearchSettingsPanel customizeComponents
+WARNING: Could not get number of indexed files/chunks
+2025-06-24 20:50:31.587 org.sleuthkit.autopsy.ingest.IngestMonitor$MonitorTimerAction logMonitoredRootDirectory
+INFO: Monitoring disk space of /
+2025-06-24 20:50:31.587 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+INFO: Starting ingest job 0 at 1750823431587
+2025-06-24 20:50:31.589 org.sleuthkit.autopsy.ingest.IngestPipelinesConfiguration getInstance
+INFO: Creating ingest module loader instance
+2025-06-24 20:50:31.752 org.sleuthkit.autopsy.recentactivity.SearchEngineURLQueryAnalyzer loadConfigFile
+INFO: Load successful
+2025-06-24 20:50:32.566 com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing startUp
+WARNING: An error occurred while starting the MalwareScanIngestModule.
+java.lang.IllegalStateException: No Cyber Triage license could be loaded.  Cyber Triage processing will be disabled.
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.getNewJobState(MalwareScanIngestModule.java:203)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.startUp(MalwareScanIngestModule.java:175)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule.startUp(MalwareScanIngestModule.java:86)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.567 org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule shutDown
+INFO: Keyword search ingest module instance 0 shutting down
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Android Analyzer (aLEAPP) ingest module for job 0
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: aLeapp module requires windows.
+	org.sleuthkit.autopsy.modules.leappanalyzers.ALeappAnalyzerIngestModule.startUp(ALeappAnalyzerIngestModule.java:99)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:221)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Plaso ingest module for job 0
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: Plaso module requires windows.
+	org.sleuthkit.autopsy.modules.plaso.PlasoIngestModule.startUp(PlasoIngestModule.java:112)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:221)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting iOS Analyzer (iLEAPP) ingest module for job 0
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: iLeapp module requires windows.
+	org.sleuthkit.autopsy.modules.leappanalyzers.ILeappAnalyzerIngestModule.startUp(ILeappAnalyzerIngestModule.java:99)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:221)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Keyword Search ingest module for job 0
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: The index could not be opened or does not exist.
+	org.sleuthkit.autopsy.keywordsearch.KeywordSearchIngestModule.startUp(KeywordSearchIngestModule.java:310)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting YARA Analyzer ingest module for job 0
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: The YARA ingest module is only available on 64bit Windows.
+	org.sleuthkit.autopsy.modules.yara.YaraIngestModule.startUp(YaraIngestModule.java:89)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Error starting Cyber Triage Malware Scanner ingest module for job 0
+org.sleuthkit.autopsy.ingest.IngestModule$IngestModuleException: No Cyber Triage license could be loaded.  Cyber Triage processing will be disabled.
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.startUp(MalwareScanIngestModule.java:183)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule.startUp(MalwareScanIngestModule.java:86)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+java.lang.IllegalStateException: No Cyber Triage license could be loaded.  Cyber Triage processing will be disabled.
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule$SharedProcessing.startUp(MalwareScanIngestModule.java:183)
+	com.basistech.df.cybertriage.autopsy.malwarescan.MalwareScanIngestModule.startUp(MalwareScanIngestModule.java:86)
+	org.sleuthkit.autopsy.ingest.IngestPipeline$PipelineModule.startUp(IngestPipeline.java:418)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUpIngestModules(IngestPipeline.java:159)
+	org.sleuthkit.autopsy.ingest.IngestPipeline.startUp(IngestPipeline.java:113)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipeline(IngestJobExecutor.java:259)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUpIngestModulePipelines(IngestJobExecutor.java:225)
+	org.sleuthkit.autopsy.ingest.IngestJobExecutor.startUp(IngestJobExecutor.java:193)
+	org.sleuthkit.autopsy.ingest.IngestJob.start(IngestJob.java:235)
+	org.sleuthkit.autopsy.ingest.IngestManager.startIngestJob(IngestManager.java:630)
+	org.sleuthkit.autopsy.ingest.IngestJobInputStream.<init>(IngestJobInputStream.java:42)
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:448)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestManager startIngestJob
+SEVERE: Ingest job 0 could not be started
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Finished all ingest tasks for tier 0 of ingest job (data source = Narcos-1.001, data source object ID = 1, job ID = 0)
+2025-06-24 20:50:32.578 org.sleuthkit.autopsy.casemodule.ImageDSProcessor runWithIngestStream
+SEVERE: Error starting ingest modules
+org.sleuthkit.datamodel.TskCoreException: Error starting ingest modules
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:457)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+org.sleuthkit.autopsy.ingest.IngestManager$IngestManagerException: Errors occurred while starting ingest
+	org.sleuthkit.autopsy.ingest.IngestManager.openIngestStream(IngestManager.java:457)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:343)
+	org.sleuthkit.autopsy.casemodule.ImageDSProcessor.runWithIngestStream(ImageDSProcessor.java:316)
+	org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel.lambda$startDataSourceProcessing$0(AddImageWizardAddingProgressPanel.java:371)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:32.58 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Scheduling ingest tasks for tier 1 of ingest job (data source = Narcos-1.001, data source object ID = 1, job ID = 0)
+2025-06-24 20:50:32.58 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Finished all ingest tasks for tier 1 of ingest job (data source = Narcos-1.001, data source object ID = 1, job ID = 0)
+2025-06-24 20:50:32.58 org.sleuthkit.autopsy.ingest.IngestJobExecutor logInfoMessage
+INFO: Finished all ingest tasks for ingest job (data source = Narcos-1.001, data source object ID = 1, job ID = 0)
+2025-06-24 20:50:32.581 org.sleuthkit.autopsy.ingest.IngestManager finishIngestJob
+INFO: Ingest job 0 cancelled at 1750823432581
+2025-06-24 20:50:58.69 org.sleuthkit.autopsy.casemodule.AddImageTask runAddImageProcess
+WARNING: Non-critical error occurred adding image /home/huntern/Desktop/Narcos-1/Image/Narcos-1.001
+org.sleuthkit.datamodel.TskDataException: Errors occurred while ingesting image 
+1. Cannot determine file system type (Sector offset: 1226752, Partition Type: Microsoft reserved partition) 
+
+	org.sleuthkit.datamodel.SleuthkitJNI.runAddImgNat(Native Method)
+	org.sleuthkit.datamodel.SleuthkitJNI$CaseDbHandle$AddImageProcess.run(SleuthkitJNI.java:586)
+	org.sleuthkit.autopsy.casemodule.AddImageTask.runAddImageProcess(AddImageTask.java:167)
+	org.sleuthkit.autopsy.casemodule.AddImageTask.run(AddImageTask.java:117)
+	java.base/java.lang.Thread.run(Thread.java:840)
+2025-06-24 20:50:58.703 org.sleuthkit.autopsy.casemodule.AddImageWizardAddingProgressPanel lambda$dataSourceProcessorDone$1
+WARNING: DatasourceID: 97a39b1d-3ba1-442c-ae9f-cc44ac1cccab Error Message: Errors occurred while ingesting image 
+1. Cannot determine file system type (Sector offset: 1226752, Partition Type: Microsoft reserved partition) 
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>6.0</SchemaVersion>
+  <CreatedDate>2025/06/24 20:49:55 (PDT)</CreatedDate>
+  <ModifiedDate>2025/06/24 21:25:22 (PDT)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.22.1</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.22.1</SavedByAutopsyVersion>
+  <Case>
+    <Name>narck_20250624_204955</Name>
+    <DisplayName>Narcos</DisplayName>
+    <Number>001</Number>
+    <Examiner>Hunter Nicholes</Examiner>
+    <ExaminerPhone>559-999-6111</ExaminerPhone>
+    <ExaminerEmail>huntersnothereman@gmail.com</ExaminerEmail>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+  <ContentProvider>
+    <Name/>
+  </ContentProvider>
+  <OriginalCase/>
+</AutopsyCase>
